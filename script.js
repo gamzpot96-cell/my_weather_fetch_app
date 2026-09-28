@@ -29,8 +29,8 @@ document.getElementById('btnFetch').addEventListener('click', () => {
   const target = CITIES[cityKey];
   console.log(target.name)
   console.log(`선택된 도시: ${target.name} (위도: ${target.lat}, 경도: ${target.lon})`);
-  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityKey}&units=metric&lang=kr&appid=${process.env.OPENWEATHER_API_KEY}`;
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityKey}&units=metric&lang=kr&appid=01f8c007f4b5c28af684b2b8e9c1b340`;
+  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityKey}&units=metric&lang=kr&appid=01f8c007f4b5c28af684b2b8e9c1b340`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityKey}&units=metric&lang=kr&appid=${OPENWEATHER_API_KEY}`;
 
   log(`1. fetch() 주문서 발송: ${target.name}`);
   resultCard.classList.add('d-none');

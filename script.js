@@ -51,11 +51,11 @@ document.getElementById('btnFetch').addEventListener('click', () => {
       console.log(`3. JSON 데이터 수신 완료!`);
       console.log(data);
       const current = data.main;
-      log(`3. JSON 번역 완료! 기온: ${current.temp}℃ / 습도: ${current.humidity}%`);
+      log(`3. JSON 번역 완료! 기온: ${data.main.temp}℃ / 습도: ${data.main.humidity}%`);
 
       // 화면에 표시
       cityNameEl.textContent = target.name;
-      cityTempEl.textContent = `${current.temp} ℃`;
+      cityTempEl.textContent = `${data.main.temp} ℃`;
       cityExtraEl.textContent = `습도: ${data.main.humidity}% | 풍속: ${data.wind.speed} km/h`;
       resultCard.classList.remove('d-none');
     })

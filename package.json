@@ -1,0 +1,24 @@
+{
+  "name": "my_weather_fetch_app",
+  "version": "1.0.0",
+  "description": "Readme",
+  "homepage": "https://github.com/gamzpot96-cell/my_weather_fetch_app#readme",
+  "bugs": {
+    "url": "https://github.com/gamzpot96-cell/my_weather_fetch_app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamzpot96-cell/my_weather_fetch_app.git"
+  },
+  "license": "ISC",
+  "author": "jw",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1"
+  }
+}
